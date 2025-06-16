@@ -48,6 +48,21 @@ $ pip install ultralytics==8.1.34
 $ pip install opencv-python==4.9.0.80
 $ pip install Pillow==10.2.0
 ```
+3. Como executar
+
+Após instalar as dependências, execute o seguinte comando:
+
+```
+python contador_medicamentos.py
+```
+> Certifique-se de que o arquivo best.pt (modelo treinado) esteja corretamente localizado no caminho definido no código. Por padrão, ele está na pasta train15.
+
+
+
+
+
+
+
 
 
 
