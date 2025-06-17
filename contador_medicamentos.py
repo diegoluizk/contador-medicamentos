@@ -15,7 +15,8 @@ class ContadorMedicamentos:
 
     def carregar_modelo(self):
         try:
-            self.modelo = YOLO("C:/Users/diego/Python/PDI/train15/weights/best.pt")
+            modelo_path = os.path.join(os.path.dirname(__file__), 'train15', 'weights', 'best.pt')
+            self.modelo = YOLO(modelo_path)
         except Exception as e:
             messagebox.showerror("Erro Crítico", f"Não foi possível carregar o modelo de detecção:\n{str(e)}")
             self.root.destroy()
